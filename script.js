@@ -1,13 +1,17 @@
 const overlay = document.querySelector('.detail-overlay');
 const details = [...document.querySelectorAll('.project-detail')];
 
-document.querySelectorAll('.card-open').forEach((btn) => {
+document.querySelectorAll('.card-open[data-project]').forEach((btn) => {
   btn.addEventListener('click', () => {
     details.forEach((detail) => {
       detail.hidden = true;
     });
 
     const selectedDetail = document.getElementById(btn.dataset.project);
+    if (!selectedDetail) {
+      return;
+    }
+
     selectedDetail.hidden = false;
     overlay.hidden = false;
     document.body.style.overflow = 'hidden';
