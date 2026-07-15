@@ -284,15 +284,15 @@ a {
 
 .about-portrait {
   justify-self: start;
-  width: min(100%, 360px);
+  width: min(100%, 280px);
 }
 
 .about-portrait img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   object-position: center top;
-  border-radius: var(--radius);
+  border-radius: 50%;
   box-shadow: var(--shadow);
 }
 
