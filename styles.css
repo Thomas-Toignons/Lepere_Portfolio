@@ -277,8 +277,23 @@ a {
 .about {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
   gap: 7vw;
   background: var(--paper);
+}
+
+.about-portrait {
+  justify-self: start;
+  width: min(100%, 360px);
+}
+
+.about-portrait img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .about-copy {
@@ -441,6 +456,10 @@ footer {
 
   .about {
     grid-template-columns: 1fr;
+  }
+
+  .about-portrait {
+    justify-self: center;
   }
 
   .gallery {
