@@ -1,0 +1,887 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta
+      name="description"
+      content="Detailed engineering project case studies and image galleries for Thomas Lepere's portfolio."
+    >
+    <title>Project details - Thomas Lepere</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="detail-page">
+    <header class="site-header">
+      <a class="brand" href="index.html#top">TL</a>
+      <nav>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="detail-page-main">
+      <section class="detail-page-intro">
+        <a class="back-link" href="index.html#projects">Back to projects</a>
+        <p class="eyebrow">Project details</p>
+        <h1>Case studies & image galleries</h1>
+        <p>
+          Open a project from the list or from the portfolio cards to see its
+          objective, method, results, contribution and figures.
+        </p>
+      </section>
+
+      <div class="project-layout">
+        <aside class="project-nav" aria-label="Project list">
+          <a data-project-link href="#wind-turbine-icing">Wind-Turbine Icing & Energy Forecasting</a>
+          <a data-project-link href="#tf35-correlation">CFD–Wind-Tunnel Correlation for a Foiling Catamaran</a>
+          <a data-project-link href="#wingsail-slot">Slot-Width Effects on a Two-Element Wingsail</a>
+          <a data-project-link href="#particle-jet">Particle-Laden Thermally Buoyant Jets</a>
+          <a data-project-link href="#formula-student">Formula Student CFD–Wind-Tunnel Correlation</a>
+          <a data-project-link href="#pneumatic-tubes">Pneumatic-Tube Effects on Pressure Measurements</a>
+          <a data-project-link href="#dic-crack">Crack-Tip Fields from Digital Image Correlation</a>
+          <a data-project-link href="#helmet-neck">Biofidelic Neck Model for Ski-Helmet Testing</a>
+          <a data-project-link href="#thin-airfoil">Lift and Drag of a Flapped 2D Airfoil</a>
+          <a data-project-link href="#drone-fea">Structural Simulation of a Quadcopter Drone</a>
+        </aside>
+
+        <div class="project-detail-stage">
+<section class="project-detail" id="wind-turbine-icing" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Data analysis · Machine learning · Energy</p>
+          <h2>Wind-Turbine Icing & Energy Forecasting</h2>
+          <p class="tools">Python</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>98%</strong>
+            <span>icing classification accuracy</span>
+          </div>
+          <div>
+            <strong>2.2–7.6 MWh</strong>
+            <span>estimated energy loss</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Quantify icing-induced production losses and assess the long-term
+              wind-energy potential of an alpine site.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Combined SCADA data with heated and unheated anemometer
+              measurements, labelled icing events, and trained classification and
+              regression models.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              Identified 272 icing events. Estimated losses represented 5–18% of
+              production, while long-term models indicated strong site potential.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Data preparation, icing-event labelling, machine-learning
+              modelling, statistical evaluation and energy-yield analysis.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/wind-turbine-icing/01.png">
+            <img
+              src="assets/wind-turbine-icing/01.png"
+              alt="Figure from Wind-Turbine Icing & Energy Forecasting"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wind-turbine-icing/03.png">
+            <img
+              src="assets/wind-turbine-icing/03.png"
+              alt="Figure from Wind-Turbine Icing & Energy Forecasting"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wind-turbine-icing/05.png">
+            <img
+              src="assets/wind-turbine-icing/05.png"
+              alt="Figure from Wind-Turbine Icing & Energy Forecasting"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wind-turbine-icing/02.png">
+            <img
+              src="assets/wind-turbine-icing/02.png"
+              alt="Figure from Wind-Turbine Icing & Energy Forecasting"
+              loading="lazy"
+            >
+          </button>
+                    <button class="gallery-item" data-full="assets/wind-turbine-icing/04.png">
+            <img
+              src="assets/wind-turbine-icing/04.png"
+              alt="Figure from Wind-Turbine Icing & Energy Forecasting"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="tf35-correlation" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Aerodynamics · CFD · Wind-tunnel testing</p>
+          <h2>CFD–Wind-Tunnel Correlation for a Foiling Catamaran</h2>
+          <p class="tools">ANSYS Fluent · Python</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>±10%</strong>
+            <span>component-level pressure-loss agreement</span>
+          </div>
+          <div>
+            <strong>51°</strong>
+            <span>oblique net incidence investigated</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Investigate the discrepancy between previous wind-tunnel
+              measurements and CFD drag predictions for a TF35 foiling catamaran.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Reproduced reduced-scale wind-tunnel conditions and compared
+              resolved-net and porous-media modelling strategies.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              Matched component-level pressure losses after correcting porous
+              parameters, but showed that the approach could not fully reproduce
+              the net behaviour on the complete boat.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              CFD setup, wind-tunnel correlation, porous-media assessment and
+              interpretation of modelling limitations.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/tf35-correlation/02.jpg">
+            <img
+              src="assets/tf35-correlation/02.jpg"
+              alt="Figure from CFD–Wind-Tunnel Correlation for a Foiling Catamaran"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/tf35-correlation/01.png">
+            <img
+              src="assets/tf35-correlation/01.png"
+              alt="Figure from CFD–Wind-Tunnel Correlation for a Foiling Catamaran"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/tf35-correlation/03.png">
+            <img
+              src="assets/tf35-correlation/03.png"
+              alt="Figure from CFD–Wind-Tunnel Correlation for a Foiling Catamaran"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/tf35-correlation/04.png">
+            <img
+              src="assets/tf35-correlation/04.png"
+              alt="Figure from CFD–Wind-Tunnel Correlation for a Foiling Catamaran"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/tf35-correlation/05.png">
+            <img
+              src="assets/tf35-correlation/05.png"
+              alt="Figure from CFD–Wind-Tunnel Correlation for a Foiling Catamaran"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="wingsail-slot" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Aerodynamics · Parametric CFD</p>
+          <h2>Slot-Width Effects on a Two-Element Wingsail</h2>
+          <p class="tools">ANSYS Fluent · Python</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>Re ≈ 10⁷</strong>
+            <span>fully turbulent regime</span>
+          </div>
+          <div>
+            <strong>0.5–5%</strong>
+            <span>slot-width range</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Determine when the slot between two wingsail elements improves
+              aerodynamic performance.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Ran a 2D steady-RANS parametric study across angle of attack,
+              camber and slot width after mesh- and domain-convergence checks.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              No universal optimum was found. Wider gaps became more beneficial
+              at high angles of attack, while performance depended strongly on
+              camber and operating point.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Geometry parameterisation, convergence studies, CFD campaign and
+              aerodynamic post-processing.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/wingsail-slot/01.png">
+            <img
+              src="assets/wingsail-slot/01.png"
+              alt="Figure from Slot-Width Effects on a Two-Element Wingsail"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wingsail-slot/02.png">
+            <img
+              src="assets/wingsail-slot/02.png"
+              alt="Figure from Slot-Width Effects on a Two-Element Wingsail"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wingsail-slot/04.png">
+            <img
+              src="assets/wingsail-slot/04.png"
+              alt="Figure from Slot-Width Effects on a Two-Element Wingsail"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wingsail-slot/03.png">
+            <img
+              src="assets/wingsail-slot/03.png"
+              alt="Figure from Slot-Width Effects on a Two-Element Wingsail"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/wingsail-slot/05.png">
+            <img
+              src="assets/wingsail-slot/05.png"
+              alt="Figure from Slot-Width Effects on a Two-Element Wingsail"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="particle-jet" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Environmental CFD · Multiphase flow</p>
+          <h2>Particle-Laden Thermally Buoyant Jets</h2>
+          <p class="tools">ANSYS Fluent</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>5 × 10⁴</strong>
+            <span>Lagrangian parcels</span>
+          </div>
+          <div>
+            <strong>1–10 K</strong>
+            <span>temperature-difference range</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Assess how thermal buoyancy changes a horizontal jet trajectory and
+              the resulting particle deposition.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Coupled a 3D steady-RANS carrier phase with a Lagrangian Discrete
+              Phase Model, including mesh convergence and sediment trapping.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              Thermal buoyancy strongly deflected the plume, while deposition
+              changed noticeably only for a limited fraction of particles.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Simulation setup, mesh-convergence analysis, multiphase modelling
+              and plume/deposition post-processing.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/particle-jet/02.png">
+            <img
+              src="assets/particle-jet/02.png"
+              alt="Figure from Particle-Laden Thermally Buoyant Jets"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/particle-jet/04.png">
+            <img
+              src="assets/particle-jet/04.png"
+              alt="Figure from Particle-Laden Thermally Buoyant Jets"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/particle-jet/01.png">
+            <img
+              src="assets/particle-jet/01.png"
+              alt="Figure from Particle-Laden Thermally Buoyant Jets"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/particle-jet/05.png">
+            <img
+              src="assets/particle-jet/05.png"
+              alt="Figure from Particle-Laden Thermally Buoyant Jets"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/particle-jet/03.jpg">
+            <img
+              src="assets/particle-jet/03.jpg"
+              alt="Figure from Particle-Laden Thermally Buoyant Jets"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="formula-student" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Aerodynamics · Wind-tunnel testing · CAD</p>
+          <h2>Formula Student CFD–Wind-Tunnel Correlation</h2>
+          <p class="tools">3DEXPERIENCE · 3D printing · Python</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong><10%</strong>
+            <span>drag-coefficient error</span>
+          </div>
+          <div>
+            <strong>149</strong>
+            <span>wind-tunnel tests</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Validate the team’s CFD methodology using a reduced-scale Formula
+              Student race-car model.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Designed and tested a 1:3-scale 3D-printed model, then compared
+              measured aerodynamic coefficients and flow observations with CFD.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              Drag correlation was within 10%. Lift proved more sensitive to
+              support effects, model deformation and measurement uncertainty.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Reduced-model CAD, test planning, experimental campaign and CFD
+              correlation.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/formula-student/02.jpg">
+            <img
+              src="assets/formula-student/02.jpg"
+              alt="Figure from Formula Student CFD–Wind-Tunnel Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/formula-student/04.png">
+            <img
+              src="assets/formula-student/04.png"
+              alt="Figure from Formula Student CFD–Wind-Tunnel Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/formula-student/03.jpg">
+            <img
+              src="assets/formula-student/03.jpg"
+              alt="Figure from Formula Student CFD–Wind-Tunnel Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/formula-student/01.png">
+            <img
+              src="assets/formula-student/01.png"
+              alt="Figure from Formula Student CFD–Wind-Tunnel Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/formula-student/cover.jpg">
+            <img
+              src="assets/formula-student/cover.jpg"
+              alt="Figure from Formula Student CFD–Wind-Tunnel Correlation"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="pneumatic-tubes" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Experimental aerodynamics · Signal processing</p>
+          <h2>Pneumatic-Tube Effects on Pressure Measurements</h2>
+          <p class="tools">Python</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>36%</strong>
+            <span>fluctuation attenuation</span>
+          </div>
+          <div>
+            <strong>13</strong>
+            <span>tube lengths tested</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Quantify how pneumatic-tube length affects steady and unsteady
+              wall-pressure measurements.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Designed a cylinder experiment, acquired pressure signals for
+              several angular positions, and performed statistical and spectral
+              analyses.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              Mean pressure coefficients remained nearly unchanged, whereas
+              longer tubes attenuated pressure fluctuations and shifted spectral
+              content.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Experimental design, acquisition workflow, statistics, Fourier
+              analysis and interpretation of the measurement chain.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/pneumatic-tubes/02.png">
+            <img
+              src="assets/pneumatic-tubes/02.png"
+              alt="Figure from Pneumatic-Tube Effects on Pressure Measurements"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/pneumatic-tubes/01.png">
+            <img
+              src="assets/pneumatic-tubes/01.png"
+              alt="Figure from Pneumatic-Tube Effects on Pressure Measurements"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/pneumatic-tubes/03.png">
+            <img
+              src="assets/pneumatic-tubes/03.png"
+              alt="Figure from Pneumatic-Tube Effects on Pressure Measurements"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/pneumatic-tubes/04.png">
+            <img
+              src="assets/pneumatic-tubes/04.png"
+              alt="Figure from Pneumatic-Tube Effects on Pressure Measurements"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/pneumatic-tubes/05.png">
+            <img
+              src="assets/pneumatic-tubes/05.png"
+              alt="Figure from Pneumatic-Tube Effects on Pressure Measurements"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/pneumatic-tubes/06.png">
+            <img
+              src="assets/pneumatic-tubes/06.png"
+              alt="Figure from Pneumatic-Tube Effects on Pressure Measurements"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="dic-crack" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Experimental mechanics · Fracture</p>
+          <h2>Crack-Tip Fields from Digital Image Correlation</h2>
+          <p class="tools">MATLAB · Ncorr</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>10 Hz</strong>
+            <span>image acquisition</span>
+          </div>
+          <div>
+            <strong>20 µm/s</strong>
+            <span>crosshead speed</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Assess whether linear-elastic fracture mechanics remains valid for
+              highly deformable polyacrylamide hydrogels.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Used Digital Image Correlation to obtain displacement and strain
+              fields, calculated the J-integral and compared linear and
+              nonlinear stress-intensity estimates.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              The linear model agreed well with two samples, while a third
+              highlighted sensitivity to nonlinear material behaviour and
+              experimental conditions.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              DIC processing, stress-field reconstruction, J-integral
+              implementation and comparison of fracture models.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/dic-crack/01.png">
+            <img
+              src="assets/dic-crack/01.png"
+              alt="Figure from Crack-Tip Fields from Digital Image Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/dic-crack/02.png">
+            <img
+              src="assets/dic-crack/02.png"
+              alt="Figure from Crack-Tip Fields from Digital Image Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/dic-crack/04.png">
+            <img
+              src="assets/dic-crack/04.png"
+              alt="Figure from Crack-Tip Fields from Digital Image Correlation"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/dic-crack/03.png">
+            <img
+              src="assets/dic-crack/03.png"
+              alt="Figure from Crack-Tip Fields from Digital Image Correlation"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="helmet-neck" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Biomechanics · Mechanical design · Impact testing</p>
+          <h2>Biofidelic Neck Model for Ski-Helmet Testing</h2>
+          <p class="tools">Autodesk Fusion 360 · Python</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>19.2 kHz</strong>
+            <span>sampling frequency</span>
+          </div>
+          <div>
+            <strong>≈10 kN</strong>
+            <span>peak force with compliant neck</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Introduce controlled neck-like compliance into a conventional rigid
+              helmet-impact test setup.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Designed a spring-based, manufacturable neck with guides and an
+              end-stop, then compared rigid and compliant configurations in
+              drop-tower tests.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              The compliant configuration reduced peak force from approximately
+              12–13 kN to about 10 kN and reduced exposure above the 250 g
+              threshold.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Concept selection, CAD design, component sizing, prototype
+              integration and test-data analysis.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/helmet-neck/01.jpg">
+            <img
+              src="assets/helmet-neck/01.jpg"
+              alt="Figure from Biofidelic Neck Model for Ski-Helmet Testing"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/helmet-neck/02.png">
+            <img
+              src="assets/helmet-neck/02.png"
+              alt="Figure from Biofidelic Neck Model for Ski-Helmet Testing"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/helmet-neck/03.jpg">
+            <img
+              src="assets/helmet-neck/03.jpg"
+              alt="Figure from Biofidelic Neck Model for Ski-Helmet Testing"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="thin-airfoil" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Aerodynamics · Analytical modelling</p>
+          <h2>Lift and Drag of a Flapped 2D Airfoil</h2>
+          <p class="tools">MATLAB</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>5</strong>
+            <span>hinge positions</span>
+          </div>
+          <div>
+            <strong>4</strong>
+            <span>flap angles</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Reproduce lift and pressure-distribution trends from a published
+              two-dimensional airfoil study.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Implemented Thin Airfoil Theory with an arbitrary flap-hinge
+              location and compared multiple flap-angle and hinge-position
+              configurations.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              The analytical model reproduced low-angle trends efficiently, while
+              deviations increased near separation and stall where inviscid
+              theory is limited.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              MATLAB implementation, geometry parameterisation and validation
+              against reference results.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/thin-airfoil/01.png">
+            <img
+              src="assets/thin-airfoil/01.png"
+              alt="Figure from Lift and Drag of a Flapped 2D Airfoil"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/thin-airfoil/02.png">
+            <img
+              src="assets/thin-airfoil/02.png"
+              alt="Figure from Lift and Drag of a Flapped 2D Airfoil"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/thin-airfoil/03.png">
+            <img
+              src="assets/thin-airfoil/03.png"
+              alt="Figure from Lift and Drag of a Flapped 2D Airfoil"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/thin-airfoil/04.png">
+            <img
+              src="assets/thin-airfoil/04.png"
+              alt="Figure from Lift and Drag of a Flapped 2D Airfoil"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="project-detail" id="drone-fea" hidden>
+        <div class="detail-header">
+          <p class="eyebrow">Finite elements · Structural mechanics</p>
+          <h2>Structural Simulation of a Quadcopter Drone</h2>
+          <p class="tools">Abaqus · Python · Excel</p>
+        </div>
+        <div class="detail-metrics">
+          <div>
+            <strong>6.87 MPa</strong>
+            <span>maximum stress</span>
+          </div>
+          <div>
+            <strong>0.17 mm</strong>
+            <span>maximum displacement</span>
+          </div>
+        </div>
+        <div class="detail-copy">
+          <div>
+            <h3>Objective</h3>
+            <p>
+              Validate an FPV drone frame under normal-flight loads and identify
+              opportunities for weight reduction.
+            </p>
+          </div>
+          <div>
+            <h3>Method</h3>
+            <p>
+              Performed modal and static finite-element analyses with
+              mesh-convergence studies for hovering, camera integration and
+              asymmetric turning.
+            </p>
+          </div>
+          <div>
+            <h3>Result</h3>
+            <p>
+              The most demanding turning case remained far below the aluminium
+              yield strength, supporting further mass optimisation.
+            </p>
+          </div>
+          <div>
+            <h3>My contribution</h3>
+            <p>
+              Load-case definition, FE modelling, convergence studies and
+              structural-margin assessment.
+            </p>
+          </div>
+        </div>
+        <div class="gallery">
+          <button class="gallery-item" data-full="assets/drone-fea/03.jpg">
+            <img
+              src="assets/drone-fea/03.jpg"
+              alt="Figure from Structural Simulation of a Quadcopter Drone"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/drone-fea/01.png">
+            <img
+              src="assets/drone-fea/01.png"
+              alt="Figure from Structural Simulation of a Quadcopter Drone"
+              loading="lazy"
+            >
+          </button>
+          <button class="gallery-item" data-full="assets/drone-fea/02.jpg">
+            <img
+              src="assets/drone-fea/02.jpg"
+              alt="Figure from Structural Simulation of a Quadcopter Drone"
+              loading="lazy"
+            >
+          </button>
+        </div>
+      </section>
+    
+        </div>
+      </div>
+    </main>
+
+    <div class="lightbox" hidden>
+      <button aria-label="Close image">&times;</button>
+      <img alt="Expanded project figure">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

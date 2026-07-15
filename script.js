@@ -1,34 +1,3 @@
-const overlay = document.querySelector('.detail-overlay');
-const details = [...document.querySelectorAll('.project-detail')];
-
-document.querySelectorAll('.card-open').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    details.forEach((detail) => {
-      detail.hidden = true;
-    });
-
-    const selectedDetail = document.getElementById(btn.dataset.project);
-    selectedDetail.hidden = false;
-    overlay.hidden = false;
-    document.body.style.overflow = 'hidden';
-    overlay.scrollTop = 0;
-  });
-});
-
-document.querySelectorAll('.detail-close').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    overlay.hidden = true;
-    document.body.style.overflow = '';
-  });
-});
-
-overlay.addEventListener('click', (event) => {
-  if (event.target === overlay) {
-    overlay.hidden = true;
-    document.body.style.overflow = '';
-  }
-});
-
 const filterButtons = [...document.querySelectorAll('.filters button')];
 
 filterButtons.forEach((btn) => {
@@ -46,30 +15,61 @@ filterButtons.forEach((btn) => {
   });
 });
 
-const lightbox = document.querySelector('.lightbox');
-const lightImg = lightbox.querySelector('img');
+const projectDetails = [...document.querySelectorAll('.project-detail')];
+const projectLinks = [...document.querySelectorAll('[data-project-link]')];
 
-document.querySelectorAll('.gallery-item').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    lightImg.src = btn.dataset.full;
-    lightbox.hidden = false;
+const showProjectDetail = () => {
+  if (!projectDetails.length) {
+    return;
+  }
+
+  const fallbackId = projectDetails[0].id;
+  const hashId = decodeURIComponent(window.location.hash.replace('#', ''));
+  const selectedDetail = document.getElementById(hashId) || document.getElementById(fallbackId);
+
+  projectDetails.forEach((detail) => {
+    detail.hidden = detail !== selectedDetail;
   });
-});
 
-lightbox.querySelector('button').addEventListener('click', () => {
-  lightbox.hidden = true;
-});
+  projectLinks.forEach((link) => {
+    link.classList.toggle('active', link.getAttribute('href') === `#${selectedDetail.id}`);
+  });
 
-lightbox.addEventListener('click', (event) => {
-  if (event.target === lightbox) {
-    lightbox.hidden = true;
+  const title = selectedDetail.querySelector('h2')?.textContent.trim();
+  if (title) {
+    document.title = `${title} - Thomas Lepere`;
   }
-});
+};
 
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') {
+showProjectDetail();
+window.addEventListener('hashchange', showProjectDetail);
+
+const lightbox = document.querySelector('.lightbox');
+
+if (lightbox) {
+  const lightImg = lightbox.querySelector('img');
+  const closeLightbox = () => {
     lightbox.hidden = true;
-    overlay.hidden = true;
-    document.body.style.overflow = '';
-  }
-});
+  };
+
+  document.querySelectorAll('.gallery-item').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      lightImg.src = btn.dataset.full;
+      lightbox.hidden = false;
+    });
+  });
+
+  lightbox.querySelector('button').addEventListener('click', closeLightbox);
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeLightbox();
+    }
+  });
+}
