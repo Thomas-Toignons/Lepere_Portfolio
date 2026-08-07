@@ -353,6 +353,13 @@ footer {
   margin: 10px 0;
 }
 
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
 .detail-metrics {
   display: grid;
   grid-template-columns: 1fr 1fr;
