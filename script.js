@@ -4,6 +4,45 @@ const projectCards = [...document.querySelectorAll('.project-card')];
 const toolsChart = document.querySelector('.tools-chart');
 const toolsChartCount = document.querySelector('.tools-chart-count');
 const toolsChartBars = document.querySelector('.tools-chart-bars');
+const projectSourceById = new Map(
+  projectCards
+    .map((card) => [
+      card.querySelector('.card-open[data-project]')?.dataset.project,
+      card,
+    ])
+    .filter(([projectId]) => projectId)
+);
+
+const syncProjectDetailMeta = (detail) => {
+  const sourceCard = projectSourceById.get(detail.id);
+
+  if (!sourceCard) {
+    return;
+  }
+
+  const sourceEyebrow =
+    sourceCard.querySelector('.card-body .eyebrow')?.textContent.trim() || '';
+  const sourceTools =
+    sourceCard.querySelector('.card-body .tools')?.textContent.trim() || '';
+  const targetEyebrow = detail.querySelector(
+    '.detail-header [data-project-meta="eyebrow"]'
+  );
+  const targetTools = detail.querySelector(
+    '.detail-header [data-project-meta="tools"]'
+  );
+
+  if (targetEyebrow) {
+    targetEyebrow.textContent = sourceEyebrow;
+    targetEyebrow.hidden = !sourceEyebrow;
+  }
+
+  if (targetTools) {
+    targetTools.textContent = sourceTools;
+    targetTools.hidden = !sourceTools;
+  }
+};
+
+details.forEach(syncProjectDetailMeta);
 
 document.querySelectorAll('.card-open[data-project]').forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -16,6 +55,7 @@ document.querySelectorAll('.card-open[data-project]').forEach((btn) => {
       return;
     }
 
+    syncProjectDetailMeta(selectedDetail);
     selectedDetail.hidden = false;
     overlay.hidden = false;
     document.body.style.overflow = 'hidden';
